@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Product</title>
+<style>
+	@charset "UTF-8";
+
+body {
+    background-color: #34495E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #85C1E9;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 50%; 
+    padding: 20px; 
+}
+
+.form-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: 800;
+    color: #333333; 
+    text-align: left; 
+}
+
+input[type="text"], input[type="submit"] {
+    margin: 0;
+    height: 30px; 
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    color: white;
+    font-weight: 500;
+    background-color: #3498db;
+    cursor: pointer;
+}
+
+.form-items a {
+    color: #2C3E50; 
+    text-decoration: none;
+}
+	
+</style>
+</head>
+<body>
+	<form action="/addproduct" method="post">
+		<div class="form-items">
+			<label>Product Id: </label>
+			<input type="text" name="pid"/>
+			
+			<label>Product Name: </label>
+			<input type="text" name="pName"/>
+
+			<label>Product Description: </label>
+			<input type="text" name="pDescription"/>
+
+			<label>Product Price: </label>
+			<input type="text" name="pPrice"/>
+
+			<label>Product Image File Name: </label>
+			<input type="text" name="imgFileName"/>
+
+			<input type="submit" value="Add Product"/>
+		</div>
+	</form>
+</body>
+</html>

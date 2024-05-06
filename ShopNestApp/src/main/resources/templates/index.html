@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="/css/login.css" rel="stylesheet"/>
+    <link href="/css/navbar.css" rel="stylesheet"/>
+    
+</head>
+<body>
+    
+    <!-- Include the navbar -->
+    <div th:insert="~{navbar :: navbar}" class ="navbar"></div>
+    
+    <div class="form">
+        <form action="/login" method="post" class="form">
+            <div class="form-items">
+                <label>Email</label>
+                <input type="text" name="email"/>
+                <label>Password</label>
+                <input type="password" name="password"/>
+                <a href="/map-forgotPassword">Forgot Your Password?</a>
+                <input type="submit" value="Log In"/>
+                <a href="/map-register">New User? Click here to Register</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+

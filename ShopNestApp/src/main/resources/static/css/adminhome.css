@@ -1,0 +1,38 @@
+@charset "UTF-8";
+body{
+	background-color: #34495E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: #85C1E9;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 50%; 
+    padding: 20px; 
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin:10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #3498db; /* Button color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+a.button:hover {
+    background-color: #2980b9; /* Darker color on hover */
+}
